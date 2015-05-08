@@ -1,6 +1,6 @@
-// var player1 = "x";
-// var player2 = "y";
-// var turn = 0;
+var player1 = "x";
+var player2 = "y";
+var turn = 0;
 
 // var box1;
 // var box2;
@@ -11,11 +11,22 @@
 // var box7;
 // var box8;
 // var box9;
+function initializeGame(){
+	
+}
 
-// var getWinner;
-// var winnerIsX = false;
-// var winnerIsO = false;
 
+function getWinner() {
+	if (box1 === box2 && box1 === box3) ||
+		(box4 === box5 && box4 === box6) ||
+		(box7 === box8 && box7 === box9) ||
+}
+	xWins = true;
+	console.log("X wins")
+
+function newGame() {
+
+}
 
 function allowDrop(event) {
 	event.preventDefault();
