@@ -1,43 +1,59 @@
-var player1 = "x";
-var player2 = "y";
-var turn = 0;
-
-// var box1;
-// var box2;
-// var box3;
-// var box4;
-// var box5;
-// var box6;
-// var box7;
-// var box8;
-// var box9;
-function initializeGame(){
-	
-}
+var boxArray = document.getElementsByClassName("box");
 
 
-function getWinner() {
-	if (box1 === box2 && box1 === box3) ||
-		(box4 === box5 && box4 === box6) ||
-		(box7 === box8 && box7 === box9) ||
-}
-	xWins = true;
-	console.log("X wins")
+document.getElementById("box1").addEventListener("click", function(){
+	document.getElementById("box1").innerHTML = "X"
+}); ///when writing document, we're going into hmtl to retrieve an element(getElementById) with an ID named "box1". then we add an event listener that waits for a "click" in order to carry out the function(). this function will take us back to html and references the id with the name "box1" and by inputing ".innerHTML" it will give it a value of X.
 
-function newGame() {
+boxArray[1].addEventListener("click", function() {
+	boxArray[1].innerHTML = "X"
+});
+//going back to the array, specifically to the second position in the array, and waiting for the "click" for the function to run.
 
-}
 
-function allowDrop(event) {
-	event.preventDefault();
-}
+document.getElementById("box3").addEventListener("click", function() {
+	document.getElementById("box3").innerHTML = "X"
 
-function drag(event) {
-	event.dataTransfer.setData("text", event.target.id);
-}
+});
 
- function drop(event) {
- 	event.preventDefault();
- 	var data = event.dataTransfer.getData("text");
- 	event.target.appendChild(document.getElementById(data));
- }
+document.getElementById("box4").addEventListener("click", function() {
+	document.getElementById("box4").innerHTML = "X"
+});
+
+
+
+// var playerOne = true;
+
+// playerTurn1();
+
+// function playerTurn1() {
+// 	if (playerOne == true) {
+// 		document.getElementById("box1").addEventListener("click", function() {
+// 		document.getElementById("box1").innerHTML = "X";
+// 		console.log("We put an X");
+// 		playerOne = false;
+// 		console.log("We made playerOne a false.")
+// 		})
+// 		}
+// 	else {
+// 		document.getElementById("box1").addEventListener("click", function() {
+// 		document.getElementById("box1").innerHTML = "O"})
+// 	}
+// }
+
+
+
+// function playerTurn2() {
+// 	if (playerOne == false) {
+// 		document.getElementById("box2").addEventListener("click", function() {
+// 		document.getElementById("box2").innerHTML = "O"});
+// 		console.log("The event lisenter is running too early.")
+// 		playerOne = true;
+// 		}
+// 	else {
+// 		document.getElementById("box2").addEventListener("click", function() {
+// 		document.getElementById("box2").innerHTML = "X"})
+// 	}
+// }
+
+
